@@ -10581,6 +10581,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1863630880, guid: cbad2d547cde0bb4bb1c46054916881d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488272384119773892, guid: cbad2d547cde0bb4bb1c46054916881d, type: 3}
+      propertyPath: weaponRange
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1373895572394223194, guid: cbad2d547cde0bb4bb1c46054916881d, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10591,11 +10599,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1373895572394223194, guid: cbad2d547cde0bb4bb1c46054916881d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0009803772
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1373895572394223194, guid: cbad2d547cde0bb4bb1c46054916881d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 53.695305
+      value: 52.9
       objectReference: {fileID: 0}
     - target: {fileID: 1373895572394223194, guid: cbad2d547cde0bb4bb1c46054916881d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10624,6 +10632,10 @@ PrefabInstance:
     - target: {fileID: 1373895572394223194, guid: cbad2d547cde0bb4bb1c46054916881d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1800258994407990249, guid: cbad2d547cde0bb4bb1c46054916881d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.52
       objectReference: {fileID: 0}
     - target: {fileID: 9116303944224885179, guid: cbad2d547cde0bb4bb1c46054916881d, type: 3}
       propertyPath: m_Name
@@ -19116,6 +19128,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 416864, guid: d66c89601ce96d4419ce36a4dce3c401, type: 3}
   m_PrefabInstance: {fileID: 330793443}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1231578237 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 196646, guid: 5a346deceb21d0c4781e67a70fbcc1f6, type: 3}
+  m_PrefabInstance: {fileID: 610438565}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1231578240
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231578237}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.21319, y: 5.3980865, z: 6.3384166}
+  m_Center: {x: -0.000029802322, y: 2.6990433, z: -0.0000019073486}
 --- !u!4 &1233648858 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 493576, guid: d6389bfdb7e456640b3a45339aac60a4, type: 3}
@@ -20689,6 +20719,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 413494, guid: c2849fd453abd0445a702a035f04ac60, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 137682300683135654, guid: c2849fd453abd0445a702a035f04ac60, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

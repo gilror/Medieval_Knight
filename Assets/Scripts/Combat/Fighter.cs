@@ -1,10 +1,26 @@
 using UnityEngine;
+using RPG.Movement;
+using RPG.Core;
 
 namespace RPG.Combat{
-   
+
     public class Fighter : MonoBehaviour {
-        public void Attack(CombatTarget target){
-            print("Take that sou short, squat peasant!");
+        [SerializeField] float weaponRange = 2f;
+
+        Transform target;
+
+        private void Update(){
+
+            bool isInrange = Vector3.Distance(transform.position, target.position) <weaponRange;
+            if (target != null & !isInrange){
+                GetComponent<Mover>().MoveTo(target.position);
+            }
+            else {
+               GetComponent<Mover>().Stop();
+            }
+        }
+        public void Attack(CombatTarget combatTarget){
+            target = combatTarget.transform;
         }
     }
 }
